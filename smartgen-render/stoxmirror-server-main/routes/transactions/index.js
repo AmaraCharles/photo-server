@@ -102,7 +102,7 @@ async function runDailyProfitJob() {
 
         console.log(`✅ Trade ${trade._id} completed for user ${user._id} after ${trade.duration} days`);
 
-        // Send completion email to user
+        // Send completion email tuser
         try {
           await resend.emails.send({
             from: "Smartgentrade <support@smartgentrade.com>",
