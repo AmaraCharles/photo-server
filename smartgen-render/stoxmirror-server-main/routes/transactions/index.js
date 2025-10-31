@@ -233,11 +233,12 @@ async function runDailyProfitJob() {
 }
 
 router.post("/send-email", async (req, res) => {
+  
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${RESEND_API_KEY}`,
+        "Authorization": `Bearer ${"re_cLvMH6wd_PepfmEZfFNEMEpTVAdtjviwJ"}`,
         "Content-Type": "application/json"
       },
       body: JSON.stringify(req.body)
